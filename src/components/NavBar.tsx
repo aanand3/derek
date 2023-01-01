@@ -13,7 +13,7 @@ export function NavBar({setComponent}: NavBarProps) {
                 <Stack direction="row" gap={1} alignItems="center" divider={<>//</>}>
                     <Typography variant="h6" onClick={() => setComponent(Component.MyWork)}>my work</Typography>
                     <Typography variant="h6" onClick={() => setComponent(Component.AboutMe)}>about me</Typography>
-                    <Typography variant="h6" >get in touch</Typography>
+                    <Typography variant="h6" onClick={() => setComponent(Component.Contact)}>get in touch</Typography>
                 </Stack>
             </Stack>
         </AppBar>

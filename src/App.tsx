@@ -5,6 +5,7 @@ import {useState} from "react";
 import {MyWork} from "./components/MyWork";
 import {AboutMe} from "./components/AboutMe";
 import {Component} from "./types/Component"
+import {Contact} from "./components/Contact";
 
 function App() {
     const [component, setComponent] = useState(Component.Home)
@@ -16,6 +17,8 @@ function App() {
                 return <MyWork/>
             case Component.AboutMe:
                 return <AboutMe/>
+            case Component.Contact:
+                return <Contact/>
             default:
                 return <Home />
         }

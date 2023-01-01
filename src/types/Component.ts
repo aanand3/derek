@@ -1,5 +1,6 @@
 export enum Component {
     Home,
+    MyWork,
     AboutMe,
-    MyWork
+    Contact
 }
