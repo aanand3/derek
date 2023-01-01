@@ -1,4 +1,4 @@
-import {AppBar, Stack, Typography} from "@mui/material";
+import {AppBar, Stack, Toolbar, Typography} from "@mui/material";
 import {Component} from "../types/Component";
 
 type NavBarProps = {
@@ -6,7 +6,7 @@ type NavBarProps = {
 }
 export function NavBar({setComponent}: NavBarProps) {
     return (
-        <AppBar position="fixed">
+        <AppBar>
             <Stack direction="row" minHeight="64px" alignItems="center" justifyContent="space-between" px={1}
                    backgroundColor="black">
                 <Typography variant="h3" onClick={() => setComponent(Component.Home)}>⚡︎</Typography>

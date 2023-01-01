@@ -6,6 +6,7 @@ import {MyWork} from "./components/MyWork";
 import {AboutMe} from "./components/AboutMe";
 import {Component} from "./types/Component"
 import {Contact} from "./components/Contact";
+import {Toolbar} from "@mui/material";
 
 function App() {
     const [component, setComponent] = useState(Component.Home)
@@ -26,6 +27,7 @@ function App() {
     return (
         <>
             <NavBar setComponent={setComponent}/>
+            <Toolbar />
             {componentToRender()}
         </>
     )
