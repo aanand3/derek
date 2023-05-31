@@ -1,17 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import {Typography} from "@mui/material";
+import {NavBar} from "./components/NavBar";
+import {Home} from "./components/Home";
+import {useState} from "react";
+import {MyWork} from "./components/MyWork";
+import {AboutMe} from "./components/AboutMe";
+import {Component} from "./types/Component"
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-        <Typography variant="h1">This is the start</Typography>
-    </>
-  )
+    const [component, setComponent] = useState(Component.Home)
+    function componentToRender() {
+        switch (component) {
+            case Component.Home:
+                return <Home />
+            case Component.MyWork:
+                return <MyWork/>
+            case Component.AboutMe:
+                return <AboutMe/>
+            default:
+                return <Home />
+        }
+    }
+    return (
+        <>
+            <NavBar setComponent={setComponent}/>
+            {componentToRender()}
+        </>
+    )
 }
 
 export default App
