@@ -9,7 +9,7 @@ export function MyWork() {
                     <Card>
                         <CardHeader title={<Typography variant="h4">Article 1</Typography>}/>
                         <CardContent>
-                            <img src="../../public/nyan.jpeg" alt="nyan"/>
+                            <img src="/nyan.jpeg" alt="nyan"/>
                             <Typography>
                                 This is where a short description could go
                             </Typography>
@@ -25,7 +25,7 @@ export function MyWork() {
                     <Card>
                         <CardHeader title={<Typography variant="h4">Article 2</Typography>}/>
                         <CardContent>
-                            <img src="../../public/nyan.jpeg" alt="nyan"/>
+                            <img src="/nyan.jpeg" alt="nyan"/>
                             <Typography>
                                 This is where a short description could go
                             </Typography>
@@ -41,7 +41,7 @@ export function MyWork() {
                     <Card>
                         <CardHeader title={<Typography variant="h4">Article 3</Typography>}/>
                         <CardContent>
-                            <img src="../../public/nyan.jpeg" alt="nyan"/>
+                            <img src="/nyan.jpeg" alt="nyan"/>
                             <Typography>
                                 This is where a short description could go
                             </Typography>
