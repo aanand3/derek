@@ -1,4 +1,4 @@
-export enum Component {
+export enum ComponentOptions {
     Home,
     MyWork,
     AboutMe,
